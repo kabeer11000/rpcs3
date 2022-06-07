@@ -47,7 +47,8 @@ void decrypt_sprx_libraries(std::vector<std::string> modules, std::function<std:
 		bool invalid = false;
 		usz key_it = 0;
 		u32 file_magic{};
-
+		
+		// this does not cause memory errors?
 		while (true)
 		{
 			for (; key_it < klics.size(); key_it++)
